@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Dan Noodles</title>
+    <!--Refence the stylesheet .css file-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<header>
+    <div class="wrapper">
+        <img src="../images/logo.png" class="noodlelogo" alt="Dan Dan Noodles Logo" height="150px">
+        <!-- Photo taken from Adobe Stock & editted logo in Photoshop -->
+        <nav class="sidebar">
+            <div class="navcontainer">
+                <a href="../index.html">Home</a>
+                <a href="../pages/menu.html">Menu</a>
+                <a href="../pages/about.html">About</a>
+                <a href="../pages/location.html">Location</a>
+                <a href="../pages/contactus.html">Contact Us</a>
+            </div>
+        </nav>
+        <!--URL was taken from a delicious local ramen restaurant that I went to mimic online ordering-->
+        <a href="https://www.order.store/store/tsurutontan-udon-noodle-brasserie-boston/mgbN3p1pT-6L5Fas1WKFZg"
+            target="_blank">
+            <button class="order-button">Order Now</button>
+        </a>
+    </div>
+</header>
+
+<body>
+
+    <main class="maincontact">
+
+        <form class="contact-form" action="../pages/contactussubmit.html" method="POST"> <!-- Contqct us Form-->
+
+            <h2>Contact Us</h2>
+            <p class="contacttext">For reservations, please call us at 617-xxx-xxx or contact us here. <br> <br>
+
+                For all other inquiries send us a message and we’ll get back to you as soon as possible. <br> <br>
+
+                We are looking forward to hearing from you!</p>
+
+
+            <!-- Name-->
+            <label for="name"></label>
+            <input type="text" id="name" name="name" required placeholder="Full name">
+
+            <!-- Email -->
+            <label for="email"></label>
+            <input type="email" id="email" name="email" required placeholder="Email address">
+            <!-- Drop-down Menu-->
+            <select id="reason" name="reason" required>
+                <option value="general">General Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="reservation">Reservation</option>
+                <option value="other">Other</option>
+            </select>
+            <!-- Message -->
+            <label for="message"></label>
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="../images/blackwood.jpeg" class="blackwood" alt="Blackwood Image">
+            <div class="text-overlay">
+                <h2>Dan Dan Noodles</h2>
+                <p>360 Huntington Ave<br> Boston, MA 02115</p>
+                <p>Telephone: 617-xxx-xxx</p>
+                <p>Copyright &copy; 2024 Dan Dan Noodles</p>
+                <p> <a href="mailto:dandannoodles@gmail.com"> Email:&nbspdandannoodles@gmail.com</a> </p>
+                <a href="https://facebook.com" class="social-icon" target="_blank">
+                    <img src="../images/Facebook.png" alt="Facebook" height="40px" width="40px">&nbsp &nbsp &nbsp
+                    <!-- Taken from https://about.meta.com/brand/resources/facebook/logo/-->
+                </a>
+                <a href="https://twitter.com" class="social-icon" target="_blank">
+                    <img src="../images/Twitter.png" alt="Twitter" height="40px" width="40px">&nbsp &nbsp &nbsp
+                    <!-- Taken from https://about.x.com/en/who-we-are/brand-toolkit -->
+                </a>
+                <a href="https://instagram.com" class="social-icon" target="_blank">
+                    <img src="../images/Instagram.png" alt="Instagram" height="40px" width="40px">&nbsp &nbsp &nbsp
+                    <!-- Taken from https://about.meta.com/brand/resources/instagram/instagram-brand/ -->
+                </a>
+            </div>
+        </div>
+        <div class="datecontainer">
+            <h1 class="tdate">Today's Date</h1>
+            <div id="current-date"></div>
+            <script src="../javscript/date.js"></script>
+        </div>
+    </footer>
+</body>
+
+</html>

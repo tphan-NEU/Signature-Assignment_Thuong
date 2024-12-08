@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Dan Noodles</title>
+    <!--Refence the stylesheet .css file-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<header>
+    <div class="wrapper">
+        <img src="../images/logo.png" class="noodlelogo" alt="Dan Dan Noodles Logo" height="150px">
+        <!-- Photo taken from Adobe Stock & editted logo in Photoshop -->
+        <nav class="sidebar">
+            <div class="navcontainer">
+                <a href="../index.html">Home</a>
+                <a href="../pages/menu.html">Menu</a>
+                <a href="../pages/about.html">About</a>
+                <a href="../pages/location.html">Location</a>
+                <a href="../pages/contactus.html">Contact Us</a>
+            </div>
+        </nav>
+        <!--URL was taken from a delicious local ramen restaurant that I went to mimic online ordering-->
+        <a href="https://www.order.store/store/tsurutontan-udon-noodle-brasserie-boston/mgbN3p1pT-6L5Fas1WKFZg"
+            target="_blank">
+            <button class="order-button">Order Now</button>
+        </a>
+    </div>
+</header>
+
+
+<body>
+    <main class="menubackground">
+        <div id="menucontainer">
+            <!-- Photo taken from Adobe Stock. Converted to .PDF. Text was taken by ChatGPT to generate menu items. -->
+            <iframe src="../images/Menu.pdf" width="1024px" height="1024px"
+                type="application/pdf"></iframe><!-- PPhoto was taken from Adobe Stock and exported as a .PDF-->
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="../images/blackwood.jpeg" class="blackwood" alt="Blackwood Image">
+            <div class="text-overlay">
+                <h2>Dan Dan Noodles</h2>
+                <p>360 Huntington Ave<br> Boston, MA 02115</p>
+                <p>Telephone: 617-xxx-xxx</p>
+                <p>Copyright &copy; 2024 Dan Dan Noodles</p>
+                <p> <a href="mailto:dandannoodles@gmail.com"> Email:&nbspdandannoodles@gmail.com</a> </p>
+                <a href="https://facebook.com" class="social-icon" target="_blank">
+                    <img src="../images/Facebook.png" alt="Facebook" height="40px" width="40px">&nbsp &nbsp &nbsp
+                    <!-- Taken from https://about.meta.com/brand/resources/facebook/logo/-->
+                </a>
+                <a href="https://twitter.com" class="social-icon" target="_blank">
+                    <img src="../images/Twitter.png" alt="Twitter" height="40px" width="40px">&nbsp &nbsp &nbsp
+                    <!-- Taken from https://about.x.com/en/who-we-are/brand-toolkit -->
+                </a>
+                <a href="https://instagram.com" class="social-icon" target="_blank">
+                    <img src="../images/Instagram.png" alt="Instagram" height="40px" width="40px">&nbsp &nbsp &nbsp
+                    <!-- Taken from https://about.meta.com/brand/resources/instagram/instagram-brand/ -->
+                </a>
+            </div>
+        </div>
+        <div class="datecontainer">
+            <h1 class="tdate">Today's Date</h1>
+            <div id="current-date"></div>
+            <script src="../javscript/date.js"></script>
+        </div>
+    </footer>
+</body>
+
+</html>
