@@ -1,0 +1,724 @@
+/*Main Page */
+
+body {
+    /*Black Background */
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+header {
+    /* Header picture */
+    background-image: url('../images/banner.jpeg');
+    /* Photo taken from ADobe stock */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: auto;
+}
+
+
+nav {
+    /* Center navigation*/
+    height: 100%vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 150px;
+}
+
+.navcontainer a {
+    display: inline-block;
+    /* Inline link button */
+    min-width: 50px;
+    background-color: #DEBF50;
+    margin: 5px;
+    text-align: center;
+    padding: 12px 20px;
+    /* Spaciong */
+    border-radius: 8px;
+    /* Rounded buttons */
+    font-size: 16px;
+    font-weight: 500;
+    /* Bolder*/
+    text-decoration: none;
+    color: black;
+}
+
+.navcontainer a:hover {
+    background-color: #506fde;
+    /* Background color */
+    color: #FFFFFF;
+    /* White text on hover */
+    text-decoration: underline;
+    border-color: #506fde;
+    /* Color matching*/
+}
+
+.navcontainer a:active {
+    background-color: #FFFFFF;
+    color: #506fde;
+    /* Switch to blue text when active for better contrast */
+    border-color: #506fde;
+    /* Border */
+}
+
+.navcontainer a:focus {
+    outline: 3px solid #506fde;
+    /*Sold Line */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Box Shadow to highlight hover*/
+}
+
+.noodlegridcontainer {
+    /* Grid Container for main page */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    /* Space between grid items */
+    max-width: 100%;
+    margin: 0 auto;
+    /* Grid Container centering */
+    box-sizing: border-box;
+    gap: 5px;
+}
+
+
+.gridlong {
+    /* 1st column tag*/
+    grid-column: span 3;
+    /* Span long image to 3 columns of the grid */
+    max-width: 100%;
+}
+
+
+.grid-item {
+    /* Grid pictures*/
+    display: flex;
+    justify-content: center;
+    /* Center*/
+    align-items: center;
+    /* Center items */
+    object-fit: contain
+}
+
+/* Image styling */
+
+.grid-image {
+    width: 100%;
+    /* Responsive */
+    /* height: 100%;
+    max-width: 100%; */
+    object-fit: contain
+}
+
+.noodlegridcontainer {
+    /* targets the gridcontainer 2nd and 3rd row. 3 images on each row */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    position: relative;
+    /* Overlays the text */
+    overflow: hidden;
+    /* Prevents overflow*/
+}
+
+.footer-container {
+    position: relative;
+    /* Absolute text */
+}
+
+.blackwood {
+    height: fit-content;
+    width: 100%;
+    background-size: auto;
+    background-position: center;
+    overflow: hidden;
+    /* Prevent overflow of text */
+}
+
+.text-overlay {
+    /* Text positioning with font size, bold, centering, and padding */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+.text-overlay a {
+    /* Color */
+    color: white;
+    text-decoration: none;
+    /* Removes logo underline */
+}
+
+
+.formblock {
+    /* Center the div form class*/
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+form {
+    /* Form */
+    background-color: #DEBF50;
+    padding: 20px;
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+/* Subscribe to our newsletters */
+.formcontainer h2 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+/* Stay up to date */
+.formcontainer p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+
+}
+
+/* Input Fields */
+.container input[type="text"] {
+    width: 75%;
+    padding: 6px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+/* Submit Button */
+.container input[type="submit"] {
+    width: 50%;
+    padding: 12px;
+    background-color: #506fde;
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer
+}
+
+/*Newsletter HTML page Styling*/
+.thank-you {
+    background-color: #DEBF50;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: auto;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.thank-you .thankyoudescription {
+    /*Increase specify of the select to align the thankyou description */
+    text-align: left;
+    font-size: 20px;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #3f51b5;
+}
+
+/* Order Now Button */
+.order-button {
+    background-color: #DEBF50;
+    /* Button Background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Pointer Hover*/
+    position: fixed;
+    /* Static position */
+    right: 20px;
+    top: 20px;
+    font-weight: bolder;
+    /* Bolder */
+    font-size: 20px;
+
+}
+
+/* Small Screen/Phone */
+
+@media (max-width: 600px) {
+
+    h {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    /* Sidebar navigation styles */
+    .sidebar {
+        width: 100px;
+        padding: 5px;
+        position: absolute;
+        height: 70vh;
+        box-sizing: border-bsox;
+    }
+
+    iframe {
+        /* Changed Height to fit and adjust viewport height for phones */
+        width: 130%;
+        height: 70vh;
+    }
+
+    .aboutcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Stack all items into a single column */
+        grid-template-rows: auto;
+        /* Rows will automatically adjust based on content */
+    }
+
+    .aboutparagraph
+
+    /* Adjust margins to align paragraph */
+        {
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: -50px;
+    }
+
+    .text-overlay2 {
+        margin-left: 60px;
+    }
+
+    /* Adjust image and vide in about paragraph */
+    .aboutparagraph img,
+    .aboutvideo video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Make photo fit inside of its class */
+    .chefpic {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Contage Form media screen 600 sizing */
+    .contact-form {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .contacttext {
+        /* Adjust text to prevent navigation bar over it */
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 60px;
+    }
+
+    .thank-you {
+        /* Newsletter landing page. Adjusted thank you DIV */
+        margin-left: 100px;
+    }
+
+    /* Vertical Navigation Bar Ctaoniner */
+    .navcontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Style for each navigation link */
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        /* Removes underline from links */
+        font-size: 13px;
+        padding: 5px;
+        transition: background-color 0.4s ease;
+    }
+
+    .sidebar a:hover {
+        /* Hover Color*/
+        background-color: gray;
+        text-decoration: none;
+        /* Removes underline from links */
+    }
+
+
+    /* Grid Responsiveness*/
+    .noodlegridcontainer {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    /* Smaller text for smaller screen*/
+    /* Adjusted font size, padding, spacing, and more*/
+    .text-overlay {
+        /* Text positioning with font size, bold, centering, and padding */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        padding: 15px;
+        max-width: 80%;
+        font-size: 12px;
+    }
+
+    .text-overlay a {
+        /* Color */
+        color: white;
+        text-decoration: none;
+        /* Removes logo underline */
+    }
+
+    /* Inverted Form colors*/
+
+    .formblock {
+        /* Center the div form class*/
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+    }
+
+    form {
+        /* Form */
+        background-color: #506fde;
+        padding: 10px;
+        border-radius: 8px;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    /* Subscribe to our newsletters */
+    .formcontainer h2 {
+        font-size: 16px;
+        color: black;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-decoration: underline;
+
+    }
+
+    /* Stay up to date */
+    .formcontainer p {
+        font-size: 14px;
+        color: black;
+
+    }
+
+    /* Input Fields */
+    .container input[type="text"] {
+        width: 50%;
+        padding: 6px;
+        margin: 15px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+
+    /* Submit Button */
+    .container input[type="submit"] {
+        width: 25%;
+        padding: 5px;
+        background-color: #DEBF50;
+        color: white;
+        border: solid;
+        border-radius: 10px;
+        font-size: 15px;
+
+    }
+
+    /*Newsletter HTML page Styling*/
+    .thank-you {
+        font-size: 12px;
+    }
+
+    .thank-you .thankyoudescription {
+        /*Increase specify of the select to align the thankyou description */
+        text-align: left;
+        font-size: 12px;
+    }
+}
+
+
+/* Medium-size Screen/Tablets*/
+
+@media (max-width: 1024px) {
+    .menubackground iframe {
+        /* Adjust menu to tablets */
+        width: 850px;
+    }
+
+    .aboutcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Stack all items into a single column */
+        grid-template-rows: auto;
+        /* Rows will automatically adjust based on content */
+    }
+
+    .aboutparagraph
+
+    /* Adjust margins to align paragraph */
+        {
+        width: 100%;
+        margin-bottom: 200px;
+        margin-top: -50px;
+    }
+
+    .text-overlay2 {
+        margin-left: 60px;
+    }
+
+    /* Adjust image and vide in about paragraph */
+    .aboutparagraph img,
+    .aboutvideo video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Make photo fit inside of its class */
+    .chefpic {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+
+/*Menu Page */
+main {
+    height: 100%;
+    /* Set Flexbox and center embedded PDF */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.menubackground {
+    /*Menu Main tag */
+    background: url('..//images/menubackground.jpeg') no-repeat center center;
+    /* Taken from Adobe Stock*/
+    background-size: cover;
+}
+
+
+/*About Page */
+.aboutcontainer {
+    /*Flex Box (2 columns, 3 items, top column spans */
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.aboutparagraph {
+    grid-column: span 2;
+    /* Span first column*/
+    color: white;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    height: 400px;
+}
+
+.bio {
+    grid-column: 1;
+    /* 2nd column, 1st item*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #3C3C3C;
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+.aboutvideo {
+    grid-column: 2;
+    /* 2nd column, 2nd item*/
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #3C3C3C;
+    padding: 10px;
+    text-align: center;
+}
+
+.text-overlay2 {
+    /* Text positioning with font size, padding, spacing, left-alignment*/
+    width: auto;
+    top: 15%;
+    text-align: left;
+    font-size: 22px;
+    color: white;
+
+}
+
+.blackwood2 {
+    width: 100%;
+    height: 400px;
+    background-repeat: repeat-x;
+    /*Repeat Horizontally*/
+    background-size: auto;
+}
+
+/*Location Page*/
+
+.mainlocation {
+    /*Main Location tag. Picture background.*/
+    background: url('..//images/restaurant1.jpeg') no-repeat center center;
+    /* AI picture taken from Adobe Stock*/
+    background-size: cover;
+}
+
+.locationtext {
+    color: white;
+    margin-left: 50px;
+    padding: 25px;
+}
+
+
+/*Contact Us Page*/
+.maincontact {
+    /*Main tag for image Page.*/
+    background: url('..//images/restaurant2.jpeg') no-repeat center center;
+    /* AI picture taken from Adobe Stock*/
+    background-size: cover;
+}
+
+.contact-form {
+    /*Form Container*/
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    /*Form Header Styling*/
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-style: bold;
+}
+
+.contact-form p {
+    /*Paragraph Styling*/
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.contact-form label {
+    /*Label blocks*/
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.contact-form input,
+/*Select option styling*/
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form select {
+    appearance: none;
+    /* Removes native dropdown styling for a cleaner look */
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #DEBF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #c49b40;
+}
+
+.contact-form button:focus {
+    outline: none;
+}
+
+
+/* Javascript Date*/
+.datecontainer {
+    /* Center container & text*/
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../images/blackwood.jpeg');
+    width: 100%;
+    height: 100px;
+}
+
+.tdate {  /*Today's date styling*/
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-left: 8px;
+
+}
+
+/* Current Date Javascript Styling */
+#current-date {
+    font-size: 15px;
+    color: black;
+    background: white;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 5px solid #c49b40;
+    border-radius: 8px;
+}
